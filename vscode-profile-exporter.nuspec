@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+    <metadata>
+        <id>vscode-extensions-exporter</id>
+        <version>1.0.0</version>
+        <title>VS Code Extensions Exporter</title>
+        <authors>Kevin</authors>
+        <description>A command-line tool to export extension information (and potentially other
+            profile data) from a specified VS Code Profile.</description>
+        <projectUrl>https://github.com/kevin85112/vscode-extensions-exporter</projectUrl>
+        <licenseUrl>https://opensource.org/license/mit</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    </metadata>
+    <files>
+        <file src="tools\**" target="tools" />
+    </files>
+</package>
