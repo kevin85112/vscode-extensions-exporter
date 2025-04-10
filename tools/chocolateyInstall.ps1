@@ -21,7 +21,7 @@ Write-Host "Creating shim for '$commandName' to execute '$scriptPath'"
 # Use Chocolatey's helper function to create an executable shim in Chocolatey's bin directory
 # This makes the script callable directly from the command line via the command name.
 try {
-    Install-ChocolateyPowershellCommand -CommandName $commandName -Path $scriptPath
+    Install-ChocolateyPowershellCommand -CommandName $commandName -psFileFullPath $scriptPath
     Write-Host "Shim for '$commandName' created successfully."
 } catch {
     Write-Error "Failed to create shim for '$commandName'. Error: $($_.Exception.Message)"
